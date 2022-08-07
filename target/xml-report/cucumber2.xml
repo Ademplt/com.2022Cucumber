@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="23.892">
+    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="13.698">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given kullanici amazon anasayfasinda........................................passed
+And kullanici "Nutella" icin arama yapar....................................passed
+And sonuclarin "Tava" icerdigini test eder..................................failed
+Then sayfayi kapatir........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.AmazonStepDefinitions.sonuclarin_icerdigini_test_eder(AmazonStepDefinitions.java:69)
+	at ✽.sonuclarin "Tava" icerdigini test eder(file:///C:/Users/Admin/IdeaProjects/com.batch59Cucumber/src/test/resources/features/US1003_parametreKullanimi.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="US1004 Kullanici parametre ile configuration file'i kullanabilmeli" name="TC07 configuration properties dosyasindan parametre kullanimini" time="9.738">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfasinda...................................passed
+Then kullanici 3 sn bekler..................................................passed
+And url'in "amazon" icerdigini test eder....................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
